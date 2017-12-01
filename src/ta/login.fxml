@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="624.0" style="-fx-background-color: #F0E68C;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ta.LoginController">
+   <children>
+      <Label layoutX="225.0" layoutY="14.0" text="LOGIN">
+         <font>
+            <Font name="Love Story Rough" size="83.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="user" layoutX="188.0" layoutY="153.0" maxWidth="283.0" minWidth="283.0" prefHeight="42.0" prefWidth="283.0" promptText="Username">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="pass" layoutX="188.0" layoutY="224.0" maxWidth="283.0" minWidth="283.0" prefHeight="9.0" prefWidth="283.0" promptText="Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXPasswordField>
+      <ImageView fitHeight="58.0" fitWidth="53.0" layoutX="135.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../avatar_l.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="login" layoutX="180.0" layoutY="315.0" onAction="#proses" prefHeight="60.0" prefWidth="79.0" style="-fx-background-color: #BDB76B;" text="LOGIN" textFill="#0d3c2d">
+         <font>
+            <Font name="Amatic Bold" size="27.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="92.0" fitWidth="53.0" layoutX="127.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../2000px-Octicons-key.svg.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="back" layoutX="387.0" layoutY="313.0" onAction="#back" style="-fx-background-color: #BDB76B;" text="Back" textFill="#0d3c2d">
+         <font>
+            <Font name="Amatic Bold" size="28.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="624.0" style="-fx-background-color: #FFEBCD;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ta.HomeController">
+   <children>
+      <GridPane layoutX="102.0" layoutY="112.0" prefHeight="273.0" prefWidth="420.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JFXButton fx:id="se" onAction="#se" prefHeight="73.0" prefWidth="193.0" style="-fx-background-color: #F4A460;" text="senin">
+               <font>
+                  <Font name="Amatic SC Regular" size="40.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ra" onAction="#ra" prefHeight="74.0" prefWidth="198.0" style="-fx-background-color: #DAA520;" text="rabu" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Amatic SC Regular" size="40.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ka" onAction="#ka" prefHeight="74.0" prefWidth="198.0" style="-fx-background-color: #DEB887;" text="kamis" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Amatic SC Regular" size="40.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ju" onAction="#ju" prefHeight="74.0" prefWidth="198.0" style="-fx-background-color: #B0C4DE;" text="jumat" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Amatic SC Bold" size="40.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="sa" onAction="#sa" prefHeight="74.0" prefWidth="198.0" style="-fx-background-color: #9ACD32;" text="sabtu" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Amatic SC Regular" size="40.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="sl" onAction="#sl" prefHeight="74.0" prefWidth="198.0" style="-fx-background-color: #BC8F8F;" text="selasa" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Amatic SC Regular" size="40.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </GridPane>
+      <Label layoutX="163.0" layoutY="14.0" text="Jadwal Piketku" textFill="#031840">
+         <font>
+            <Font name="Love Story Rough" size="60.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
